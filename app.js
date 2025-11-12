@@ -355,8 +355,7 @@ app.use("/admin", adminRoutes);
 import issueRoutes from "./routes/issueRoutes.js";
 app.use("/issues", issueRoutes);
 
-
-// Server Listen
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
+const port = process.env.PORT || 10000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 // Connect database
-mongoose.connect("mongodb://127.0.0.1:27017/civicissue");
+mongoose.connect("mongodb+srv://nishthadobhaal2005_db_user:UO6WrXx3q1zwM9h1@cluster0.3jtk2j0.mongodb.net/civicdb?retryWrites=true&w=majority&appName=Cluster0");
 
 // User schema
 const userSchema = new mongoose.Schema({
